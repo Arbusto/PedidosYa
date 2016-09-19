@@ -83,7 +83,7 @@ gulp.task('browserify', function() {
 		.pipe(ngAnnotate({
           add: true
         }))
-		.pipe(uglify())
+		//.pipe(uglify())
       	.pipe(sourcemaps.init({ loadMaps: true }))
       	.pipe(sourcemaps.write('./'))
 		// saves it in the public/js/ directory
