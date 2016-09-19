@@ -1,9 +1,7 @@
 'use strict';
 require('angular');
-window._ = require('underscore');
 
 var app = angular.module('PedidosYa', /*@ngInject*/[
-    require('angular-ui-router').default,
     require('angular-google-maps-native-npm'),
     require('ng-dialog'),
     require('angular-cookies'),
