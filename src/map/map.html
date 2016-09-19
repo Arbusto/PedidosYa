@@ -1,0 +1,8 @@
+
+<gm-map center="$ctrl.startingLocation" zoom="$ctrl.zoom">
+    <span ng-repeat="marker in $ctrl.markers">
+        <gm-marker position="marker.position" >
+            <gm-infowindow options="marker.info" ng-hide="$ctrl.showInfo"></gm-infowindow>
+        </gm-marker>
+    </span>
+</gm-map>

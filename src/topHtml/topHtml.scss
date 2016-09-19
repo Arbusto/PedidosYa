@@ -1,0 +1,50 @@
+.top-html {
+    .elements {
+
+        &:hover {
+            border: 1px solid #000;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        &:hover~header {
+            display: flex;
+        }
+
+        &:hover~footer {
+            display: flex;
+        }
+    }
+
+    header {
+        font-family: 'Indie Flower', cursive;
+        background-color: #F23929;
+        border-bottom: 1px solid #000;
+        position: fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 25px;
+        display: none;
+        color: #fff;
+        justify-content: center;
+    }
+
+    footer {
+        font-family: 'Indie Flower', cursive;
+        background-color: #F23929;
+        border-top: 1px solid #000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        display: none;
+        color: #fff;
+        justify-content: center;
+    }
+
+    video {
+        width: 100%;
+    };
+}

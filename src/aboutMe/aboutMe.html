@@ -1,0 +1,73 @@
+<section id="about-me" class="about-me" in-view="$root.inView($inviewInfo, 'about-me')" in-view-options="{offset: [-400, 0, 0 ,0]}" set-nav-active>
+    <h1>About Me</h1>
+    <article class="contact">
+        <legend>Contact Info</legend>
+        <ul>
+            <li>
+                <span class="label">Address:</span>
+                <span class="text">Rio de La Plata 1393 Apt. 101</span>
+            </li>
+            <li>
+                <span class="label">Phone:</span>
+                <span class="text">099329224</span>
+            </li>
+            <li>
+                <span class="label">Email:</span>
+                <span class="text">A.Schiavi@gmail.com</span>
+            </li>
+        </ul>
+    </article>
+    <article class="me">
+        <legend>About Me</legend>
+        <p>
+            My Name is Augusto Schiavi, I'm a 30 years old front-end developer living in Mvd, Uruguay.
+            I'm passionate about javaScript and starting to love css.
+            In the past 3 years i've worked with jQuery, AngularJs and a little bit with React.
+            I've have also done back-end work mainly PHP and NodeJs.
+        </p>
+        <p>
+            Besides coding my hobbies are my firends, football, video-games, movies, tv and my pets.
+            I have a dog named Clemente and a cat called Otto. 
+        </p>
+    </article>
+    <article class="places">
+        <legend>My Favorite Places</legend>
+        <div class="columns">
+            <ul>
+                <li>
+                    <span class="place">The place where I live</span>
+                </li>
+                <li>
+                    <span class="place">The place where my familiy gets together</span>
+                </li>
+                <li>
+                    <span class="place">The place where I hange out with my friends:</span>
+                </li>
+                <li>
+                    <span class="place">My favourite restaruant</span>
+                </li>
+                <li>
+                    <span class="place">My favourtie pub/bar</span>
+                </li>
+                <li>
+                    <span class="place">My gym</span>
+                </li>
+                <li>
+                    <span class="place">My work</span>
+                </li>
+                <li>
+                    <span class="place">My team's stadium</span>
+                </li>
+                <li>
+                    <span class="place">The movie theather:</span>
+                </li>
+                <li>
+                    <span class="place">The best chivito in Mvd</span>
+                </li>
+            </ul>
+            <div>
+                <google-map starting-location="$ctrl.mapStartingLocation" zoom="$ctrl.mapZoom" mapStyle="$ctrl.mapStyle" markers="$ctrl.mapFavoritePlaces"></google-map>
+            </div>
+        </div>
+    </article>
+</section>

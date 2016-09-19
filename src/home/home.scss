@@ -1,0 +1,15 @@
+.home {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+
+        p {
+            font-family: 'Indie Flower', cursive;
+            text-shadow: #474747 3px 3px 7px;
+            font-size: 50px;
+        }
+    }
+}

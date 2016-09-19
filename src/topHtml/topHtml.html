@@ -1,0 +1,45 @@
+<section id="cool-html5-features" class="top-html" in-view="$root.inView($inviewInfo, 'cool-html5-features')" in-view-options="{offset: [-400, 0, 0 ,0]}" set-nav-active>
+    <h1>3 Cool Html 5 Features</h1>
+    <article class="elements" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+        <legend>New Elements</legend>
+        <p>
+            The new HTML5 elements allow for clear, cleaner code.</BR>
+            In HTML 4 the div was the main element used to divide different sections of the document,
+            the div was usually coupled with a CSS class and that was the way we had to separate logically different sections.
+            This meant that when you looked at your code all you saw where a lot of divs, and it wasn't clear at all what were
+            the different thematic sections of a document.</BR>
+            Now with HTML 5 we have new elements like &lt;header&gt; &lt;footer&gt; &lt;aside&gt; &lt;section&gt; &lt;article&gt; and &lt;nav&gt;.</BR>
+            Just by using this new elements I feel my code is much cleaner
+            and easy to understand for me and for any other developer that might have to work with my code.</BR>
+            Other benefits are accessibility, this makes it easier on screen readers to interpret the web page for disabled people.
+        </p>
+        <span class="header-sign"></span>
+        <span class="footer-sign"></span>
+        <span class="section-sign"></span>
+        <span class="article-sign"></span>
+        <span class="nav-sign"></span>
+    </article>
+    <header class="header">HEADER</header>
+    <footer class="footer">FOOTER</footer>
+    <article class="content-editable">
+        <legend>Inline editing with contenteditable</legend>
+        <p contenteditable>
+            Contenteditable is great, I used to add external libraries to my projects to be able to do inline editing.
+            Now with the HTML5 contenteditable attribute is super simple, all you need to do is an attribute to any element and done you have inline editing.
+            Just click on this text and you'll see what I mean.
+        </p>
+    </article>
+    <article class="audio-video">
+        <legend>Audio & Video</legend>
+        <p>
+            HTML 5 introduced native audio and video files support, now all you need to do reproduce a video or play an audio file is to use the new
+            &lt;video&gt; &lt;audio&gt; elements. No more need for iframes or heavy external libraries.
+            Theres even an api to control playback with javascript.
+            Heres a video of another cool HTML5 feature:
+        </p>
+        <video preload in-view="$ctrl.playVideo($inviewInfo)">
+            <source src="video/canvas.mp4" type="video/mp4">
+            <p> Your browser is old. <a href="video/canvas.mp4">Download this video instead.</a> </p>
+        </video>
+    </article>
+</section>

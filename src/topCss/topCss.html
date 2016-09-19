@@ -1,0 +1,43 @@
+<section id="css3-useful-modules" class="top-css" in-view="$root.inView($inviewInfo, 'css3-useful-modules')" in-view-options="{offset: [-400, 0, 0 ,0]}" set-nav-active>
+    <h1>3 CSS3 modules that are really useful</h1>
+    <article class="animations">
+        <legend>Animations and Transitions</legend>
+        <p>
+            Animations used to involve javascript and particulary animations using jQuery wich is pretty common are a bit slow.
+            With the new animations module its simplier and more performant to decorate your project with animantions and transitions.
+            Animations involve @keyframes wich hold the properties at a given point in time, then you have to indicate to wich element you want to apply the animation to,
+            you set an animation-name and animation-duration and thats about it.
+            Transitions are even easier, as the name implies, it involves the tranasition form one css property state to another, all you need to do
+            is specify wich proprty of the element you want to transition and over how much time.
+            here are some simple examples.
+        </p>
+        <div class="examples">
+            <span class="circle"></span>
+            <span class="square"></span>
+        </div>
+    </article>
+    <article class="media-queries">
+        <legend>Responsive web sites with media queries</legend>
+        <p>
+            With media queries we can create one site and adapt the look and feel for any device of any size.
+            You can write a set of css rules for a view-port size and another completly different for another size,
+            adapting your designs for different screen sizes and devices.
+            Try resizing this page now and you'll see an example.
+        </p>
+    </article>
+    <article class="selectors">
+        <legend>New selectors</legend>
+        <p>
+            CSS3 introduces new selectors, now we can avoid giving id's to every single element in our document just for styling purposes.
+            Most important giving styles to dynamically created elements is now easy, when before sometimes involved complicated math to,
+            for example count children elements.
+            Here we set a background-color for all even li of a ul element when we hover over this element just using css!
+        </p>
+        <ul>
+            <li>Child 1</li>
+            <li>Child 2</li>
+            <li>Child 3</li>
+            <li>Child 4</li>
+        </ul>
+    </article>
+</section>

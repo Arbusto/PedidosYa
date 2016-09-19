@@ -1,0 +1,33 @@
+<section id="needed-otpimizations" class="top-optim" in-view="$root.inView($inviewInfo, 'needed-otpimizations')" in-view-options="{offset: [-400, 0, 0 ,0]}" set-nav-active>
+    <h1>3 ways of optimizing a web site</h1>
+    <article class="cache">
+        <legend>Fewer Request and Caching</legend>
+        <p>
+            Reducing the amount of request, and caching the remaing ones is one of the best ways to optimize your web site.
+            This can be achived by setting either an expiration date, an expiration time, a modification date
+            or a unique identification (etag) in your request headers, personally I prefer the max-age method.
+        </p>
+    </article>
+    <article class="concat-and-minify">
+        <legend>Concatenating and minifying css and js files</legend>
+        <p>
+            Concatenating means chaining all your javascripts or css files into one big file,
+            of course having all your code in one big file while you are developing is a terrible idea.
+            But once the site is ready to be published this is one of the best things you could do for your web site.
+            Minifing is also importnant, this eliminates white spaces, and modifies the scripts in numerous ways to make the scripts smaller.
+            There are a couple of different tools to achive this, I personally do this automatically with task automation tools (grunt or gulp).
+            Another thing to remember is that loading scripts is a render-blocking activity, that's why loading scripts at the very end of the document,
+            before the body element closing tag is recommended (when possible).
+            Even better if possible using the async attribute in your js scrips will help a lot, or even if your js is small enough loading it inline.
+        </p>
+    </article>
+    <article class="images">
+        <legend>Compressing images</legend>
+        <p>
+            Another often overlooked optimization is compressing images, images are big assets and using compression on them makes a bit of a difference.
+            there are a lot of tools that do lossless compression of images.
+            Also moving all your assets to a CDN, a server specially designed for handling and delivering assests is another great idea
+            that will make a site run a lot faster.
+        </p>
+    </article>
+</section>

@@ -1,0 +1,60 @@
+@import 'https://use.fontawesome.com/6a6c6cca68.css';
+
+.navigation{
+  ul {
+    position: fixed;
+    top: 25px;
+    list-style: none;
+    li {
+      position: relative;
+    }
+  }
+
+  .list-item {
+    background: #f23929;
+    color: #000000;
+    text-align: center;
+    height: 2.5em;
+    width: 4em;
+    vertical-align: middle;
+    line-height: 2.5em;
+    border-bottom: 1px solid #FFFFFF;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    box-shadow: -2em 1.5em 0 #e1e1e1;
+    transition: all .25s linear;
+
+    &.active {
+      color: #fffcfb;
+      transform: translate(.9em, -.9em);
+      transition: all .25s linear;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: #fffcfb;
+      transform: translate(.9em, -.9em);
+      transition: all .25s linear;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        transition: all .25s linear;
+      }
+
+      &:before {
+        width: 1em;
+        top: .5em;
+        left: -1em;
+      }
+
+      &:after {
+        width: 1em;
+        bottom: -2.5em;
+        left: 1em;
+        height: 4em;
+      }
+    }
+  }
+}

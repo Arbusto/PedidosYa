@@ -1,0 +1,49 @@
+.login {
+    .header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-family: 'Indie Flower', cursive;
+        color: #E02F34;
+        font-size: 40px
+    }
+
+    .body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        div {
+            align-self: center;
+        }
+
+        label{
+            margin-right: 15px;
+        }
+
+        input {
+            border-radius: 2px;
+            box-shadow: none;
+            border: 1px solid #cecece;
+            padding: 5px;
+        }
+        .errors {
+            color: #E02F34;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        button {
+            margin-right: 15px;
+            width: 90px;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid #cecece;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

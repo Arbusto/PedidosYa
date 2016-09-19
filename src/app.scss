@@ -1,0 +1,49 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light';
+@import './externalStyles/ng-dialog.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    width: 70%;
+    align-self: center;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    color: #E02F34;
+}
+
+legend {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+@media only screen and (max-device-width: 900px){
+    main {
+        margin-left: 30%;
+    }
+}

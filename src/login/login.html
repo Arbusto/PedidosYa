@@ -1,0 +1,22 @@
+<div class="login" ng-form="$ctrl.form">
+    <div class="header">
+        <span ng-if="!$ctrl.username">Login</span>
+        <span ng-if="$ctrl.username">Hello, {{$ctrl.username}}</span>
+
+    </div>
+    <div class="body" ng-if="!$ctrl.username">
+        <div class="form-inputs">
+            <label for="username">Username: </label>
+            <input id="username" type="text" name="username" ng-model="$ctrl.user" ng-required="true" ng-minlength="3">
+        </div>
+        <div class="errors">
+            <p ng-show="$ctrl.form.username.$error.required && $ctrl.form.username.$touched">The username field is mandatory</p>
+            <p ng-show="$ctrl.form.$error.minlength">The username must be at least 3 characters long</p>
+        </div>
+    </div>
+    <div class="footer">
+        <button ng-if="!$ctrl.username" type="button" name="login" ng-disabled="$ctrl.form.$invalid" ng-click="$ctrl.login($ctrl.user)">Login</button>
+        <button ng-if="$ctrl.username" type="button" name="logout" ng-disabled="$ctrl.form.$invalid" ng-click="$ctrl.logout()">Logout</button>
+        <button type="button" name="cancel" ng-click="$ctrl.close()">Cancel</button>
+    </div>
+</div>
