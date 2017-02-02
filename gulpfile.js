@@ -111,7 +111,7 @@ gulp.task('run', ['concatCss', 'browserify', 'copyViews'], function() {
 	connect.server({
         root: 'public',
         fallback: 'public/views/index.html',
-        port: 80,
+        port: 3000,
         livereload: true
     });
 });
